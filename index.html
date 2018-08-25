@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Food Project</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header class="main-welcome-page">
+		<video autoplay muted loop id="myVideo">
+			<source src="./assets/background.mp4" type="video/mp4">
+		</video>	
+		<div class="overlay"></div>
+		<div class="content">
+			<form action="" class="initial-search">
+				<input type="text" name="search" class="initial-search-box" placeholder="Search for recipes/ingredients" required>
+				<i class="fas fa-search"></i>
+				<!-- <span class="submit"><button>Search</button></span> -->
+			</form>
+		</div>
+	</header>∫
+
+	<nav clas="nav-form">
+		<form action="" class="recipe-search">
+			<ul class="main-menu wrapper">
+
+				<li class="search-bar"><input type="text" name="search" class="recipe-search-box" placeholder="Search for recipes/ingredients" required></li>
+
+				<li class="course-type main-menu-options">course type
+					<ul class="sub-menu">
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Appetizers" id="appetizers">
+							<label for="appetizers">apperizers</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Beverages" id="beverages">
+							<label for="beverages">beverages</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Breads" id="breads">
+							<label for="breads">breads</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Breakfast and Brunch" id="breakfast and brunch">
+							<label for="breakfast and brunch">breakfast and brunch</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Cocktails" id="cocktails">
+							<label for="">cocktails</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Condiments and Sauces" id="condiments and sauces">
+							<label for="condiments and sauces">condiments and sauces</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Desserts" id="desserts">
+							<label for="desserts">desserts</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Lunch" id="lunch">
+							<label for="lunch">lunch</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Main Dishes" id="main dishes">
+							<label for="main dishes">main dishes</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Salads" id="salads">
+							<label for="salads">salads</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Side Dishes" id="side dishes">
+							<label for="side dishes">side dishes</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Snacks" id="snacks">
+							<label for="snacks">snacks</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="&allowedCourse[]=course^course-Soups" id="soups">
+							<label for="soups">soups</label>
+						</li>
+						<li>
+							<input type="radio" name="course-type" value="" checked id="any">
+							<label for="any">any</label>
+						</li>
+					</ul>
+				</li>
+
+				<li class="cuisine-type main-menu-options">cuisine type
+					<ul class="sub-menu">
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-american" id="american">
+							<label for="american">american</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-barbecue-bbq" id="barbecue">
+							<label for="barbecue">barbecue</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-cajun" id="cajun & creole">
+							<label for="cajun & creole">cajun & creole</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-chinese" id="chinese">
+							<label for="chinese">chinese</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-cuban" id="cuban">
+							<label for="cuban">cuban</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-english" id="english">
+							<label for="english">english</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-french" id="french">
+							<label for="french">french</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-german" id="german">
+							<label for="german">german</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-greek" id="greek">
+							<label for="greek">greek</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-hawaiian" id="hawaiian">
+							<label for="hawaiian">hawaiian</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-hungarian" id="hungarian">
+							<label for="hungarian">hungarian</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-indian" id="indian">
+							<label for="indian">indian</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-irish" id="irish">
+							<label for="irish">irish</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-italian" id="italian">
+							<label for="italian">italian</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-japanese" id="japanese">
+							<label for="japanese">japanese</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-kid-friendly" id="kid-friendly">
+							<label for="kid-friendly">kid-friendly</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-mediterranean" id="mediterranean">
+							<label for="mediterranean">mediterranean</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-mexican" id="mexican">
+							<label for="mexican">mexican</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-moroccan" id="moroccan">
+							<label for="moroccan">moroccan</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-portuguese" id="portuguese">
+							<label for="portuguese">portuguese</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-spanish" id="spanish">
+							<label for="spanish">spanish</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-southern" id="southern & soul">
+							<label for="southern & soul">southern & soul</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-southwstern" id="southwestern">
+							<label for="southwestern">southwestern</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-swedish" id="swedish">
+							<label for="swedish">swedish</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cuisine-type" value="&allowedCuisine[]=cuisine^cuisine-thai" id="thai">
+							<label for="thai">thai</label>
+						</li>
+					</ul>
+				</li>
+
+				<li class="dietary-restrictions main-menu-options">dietary restrictions
+					<ul class="sub-menu">
+						<li>
+							<input type="radio" name="dietary-restrictions" value="&allowedDiet[]=388^Lacto vegetarian" id="lacto vegetarian">
+							<label for="lacto vegetarian">lacto vegetarian</label>
+						</li>
+						<li>
+							<input type="radio" name="dietary-restrictions" value="&allowedDiet[]=387^Lacto-ovo vegetarian" id="lacto-ovo vegetarian">
+							<label for="lacto-ovo vegetarian">lacto-ovo vegetarian</label>
+						</li>
+						<li>
+							<input type="radio" name="dietary-restrictions" value="&allowedDiet[]=389^Ovo vegetarian" id="ovo vegetarian">
+							<label for="ovo vegetarian">ovo vegetarian</label>
+						</li>
+						<li>
+							<input type="radio" name="dietary-restrictions" value="&allowedDiet[]=403^Paleo" id="paleo">
+							<label for="paleo">paleo</label>
+						</li>
+						<li>
+							<input type="radio" name="dietary-restrictions" value="&allowedDiet[]=390^Pescetarian" id="pescetarian">
+							<label for="pescetarian">pescetarian</label>
+						</li>
+						<li>
+							<input type="radio" name="dietary-restrictions" value="&allowedDiet[]=386^Vegan" id="vegan">
+							<label for="vegan">vegan</label>
+						</li>
+						<li>
+							<input type="radio" name="dietary-restrictions" value="" checked id="none">
+							<label for="none">none</label>
+						</li>
+					</ul>
+				</li>
+
+				<li class="submit main-menu-options"><button>Search</button></li>
+
+			</ul>
+		</form>
+	</nav>
+
+
+	<section class="recipe-list wrapper">
+
+	</section>
+
+	<section class="page-results-container wrapper">
+	
+	</section>
+
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+	<script src="main.js"></script>
+</body>
+</html>
+
+
+<!-- Customer enters their required search parameters (ingredients, course type, cusisine type, dietary restrictions) -->
+	<!-- Example of a search for chicken and broccoli / Main dish / Italian / No dietary restriction -->
+		<!-- Do an API call for all recipes with chicken and broccoli -->
+		<!-- Then filter the results based on the other criteria - starting with course type - then cuisine type - then dietary restrcitions -->
+<!-- The data is pulled from the API and displayed onto the page in a list -->
+	<!-- The filtered results will then be broken down into individual recipes - displaying an image of the dish, the name of the dish and a description of it -->
+<!-- The recipes will be clickable to take them to a full view of them -->
+	<!-- The recipes will be opened in a new tab -->

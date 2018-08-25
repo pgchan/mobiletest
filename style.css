@@ -1,0 +1,357 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  box-sizing: border-box; }
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1%; }
+
+input:focus,
+button:focus {
+  outline: 0;
+  box-shadow: 2px 1px 2px 0px #bcbcbc; }
+
+input:hover {
+  transition: 0.3s;
+  box-shadow: 2px 1px 2px 0px #bcbcbc; }
+
+.main-welcome-page {
+  width: 100%;
+  height: 100%; }
+
+#myVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%); }
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: white;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 3px #191919; }
+
+.main-welcome-page .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5); }
+
+.initial-search {
+  width: 100%;
+  height: 50px;
+  position: relative; }
+  .initial-search i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #999999; }
+
+.initial-search-box {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 15px;
+  color: #333333; }
+
+nav {
+  display: none;
+  padding: 5px 0;
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 10; }
+
+.main-menu {
+  padding: 10px 1%; }
+  .main-menu li:last-child {
+    padding: 0px;
+    border: none; }
+
+.main-menu-options {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin-right: 1%;
+  padding: 5px;
+  margin-top: 13px; }
+  .main-menu-options button {
+    padding: 5px;
+    border-radius: 5px;
+    background: white; }
+
+.main-menu li:hover .sub-menu,
+.main-menu li:active .sub-menu {
+  display: block; }
+
+label {
+  background: lightgrey;
+  display: block;
+  padding: 4%; }
+
+ul {
+  list-style-type: none; }
+
+.sub-menu {
+  padding-left: 0;
+  display: none;
+  position: absolute;
+  padding-top: 15px; }
+
+.sub-menu input:hover + label {
+  background: yellow; }
+
+.submenu label:checked {
+  background: grey; }
+
+.search-bar {
+  flex: 2; }
+
+.search-bar input {
+  width: 80%;
+  border: none;
+  padding: 13px;
+  border-radius: 5px;
+  border: 1px solid lightgrey; }
+
+.course-type,
+.cuisine-type,
+.dietary-restrictions {
+  flex: 1; }
+
+.sub-menu li {
+  border: 1px solid black; }
+
+input[type=radio], input[type=checkbox] {
+  display: none; }
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  background: brown; }
+
+.recipe-list {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+a {
+  flex: 0 1 calc(33% - 20px);
+  text-decoration: none;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  position: relative; }
+  a:hover .recipe-overlay {
+    display: flex; }
+
+.recipe-container h2,
+.recipe-container h3 {
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 10px; }
+  .recipe-container h2:active,
+  .recipe-container h3:active {
+    color: black; }
+  .recipe-container h2:visited,
+  .recipe-container h3:visited {
+    color: black; }
+
+.star {
+  color: orange; }
+
+.img-container {
+  width: 100%; }
+  .img-container img {
+    width: 100%; }
+
+.results-count-container {
+  flex-basis: 100%; }
+
+.page-results-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+
+.show-button {
+  border-radius: 5px;
+  padding: 7px;
+  border: none;
+  color: #333333;
+  background-color: #DDDDDD;
+  box-shadow: 2px 2px 2px 2px #999999; }
+
+.recipe-overlay {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(197, 102, 25, 0.95);
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center; }
+  .recipe-overlay h3 {
+    font-size: 1.8rem;
+    width: 80%;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px; }
